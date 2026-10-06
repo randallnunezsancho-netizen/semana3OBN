@@ -201,7 +201,7 @@ logo_path = get_logo_path()
 # ==============================================================================
 with st.sidebar:
     if logo_path:
-        st.image(logo_path, use_container_width=True)
+        st.image(logo_path, width="stretch")
     else:
         st.markdown("### 🏛️ UNIVERSIDAD INTERNACIONAL DE LAS AMÉRICAS")
     
@@ -408,7 +408,7 @@ with tab_demostracion:
             ]
         })
         
-        st.dataframe(history_data, use_container_width=True, hide_index=True)
+        st.dataframe(history_data, width="stretch", hide_index=True)
 
         # Gráfico comparativo Plotly
         fig_comp = go.Figure()
@@ -437,7 +437,7 @@ with tab_demostracion:
             template="plotly_white",
             legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
         )
-        st.plotly_chart(fig_comp, use_container_width=True)
+        st.plotly_chart(fig_comp, width="stretch")
 
         st.info("💡 **Observación Crítica:** Observe la década de 1940 vs 1970. En los años 40, con una deuda pública sobre el 100% del PIB, la Reserva Federal no pudo subir las tasas de interés porque habría quebrado al gobierno; impuso un control de curva (represión financiera). En los 70, con la deuda en solo el 34% del PIB, Paul Volcker pudo subir las tasas al 20% sin detonar una bancarrota fiscal.")
 
@@ -480,7 +480,7 @@ with tab_demostracion:
             template="plotly_white",
             legend=dict(orientation="h", yanchor="bottom", y=1.02)
         )
-        st.plotly_chart(fig_m2, use_container_width=True)
+        st.plotly_chart(fig_m2, width="stretch")
 
         st.caption("Fuente de referencia conceptual: Lyn Alden (2021) adaptando datos de la St. Louis Fed (FRED).")
 
@@ -513,7 +513,7 @@ with tab_demostracion:
             template="plotly_white",
             legend=dict(orientation="h", yanchor="bottom", y=1.05)
         )
-        st.plotly_chart(fig_trap, use_container_width=True)
+        st.plotly_chart(fig_trap, width="stretch")
 
         st.markdown("""
         <div class="socratic-prompt">
@@ -616,7 +616,7 @@ with tab_simulador:
             template="plotly_white",
             height=300
         )
-        st.plotly_chart(fig_sim_res, use_container_width=True)
+        st.plotly_chart(fig_sim_res, width="stretch")
 
     st.markdown("---")
     st.markdown("### 📝 Ejercicios de Pensamiento Crítico Guiado")
@@ -873,7 +873,7 @@ with tab_resumen:
             template="plotly_white",
             height=320
         )
-        st.plotly_chart(fig_radar, use_container_width=True)
+        st.plotly_chart(fig_radar, width="stretch")
 
     st.markdown("---")
     st.markdown("### Generación y Descarga del Reporte Consolidado")

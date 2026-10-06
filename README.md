@@ -172,7 +172,6 @@ semana3OBN/
 ├── README.md                                             # Documentación técnica y pedagógica completa
 │
 └── SEMANA3OBN/                                           # Carpeta de recursos curriculares y fuentes
-    ├── app.py                                            # Réplica ejecutable para acceso directo desde subcarpeta
     ├── Logo-transparente.png                             # Logo oficial de la Universidad Internacional de las Américas
     ├── funcionalidades.txt                               # Requisitos técnicos y didácticos del proyecto
     ├── 2021 05 - Inflación impulsada por el fiscal.pdf   # Lectura macroeconómica central (Lyn Alden)
